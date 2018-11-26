@@ -24,9 +24,18 @@ iframe{
     width: 25vw;
 }
 
+
+
+/*  clinica  */
+
 .img-clinica-bg{
-    width: 40vw;
+    width: 100%;
 }
-.img-clinica-min{
-    width: 10vw;
+.img-clinica-sm{
+    width: 20%;
+}
+
+.btn-clinica-min:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
 }
