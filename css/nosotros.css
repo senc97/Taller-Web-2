@@ -3,10 +3,30 @@ iframe{
     height: 100%;
 }
 
+.btn-miniatura{
+}
+
+.btn-miniatura:hover{
+    background-color: var(--dark-color);
+    border-radius: 5px;
+}
+.btn-miniatura:hover .h6{
+    font-weight: bold;
+}
+
 .img-equipo-min{
-    display: 
+    width: 10vw; 
+    background-color: white;
+    border-radius: 5px;
 }
 
 .img-equipo-bg{
-    display: none;
+    width: 25vw;
+}
+
+.img-clinica-bg{
+    width: 40vw;
+}
+.img-clinica-min{
+    width: 10vw;
 }
