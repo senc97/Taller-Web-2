@@ -1,3 +1,5 @@
+@import url('menu.css');
+
 /*  color: var(--main-color);  */
 :root{
     --main-color: #0279cd;
@@ -16,7 +18,7 @@ body{
 
 /*  container  */
 .container{
-    max-width: 80vw!important;
+    max-width: 75vw!important;
 }
 
 /*  background-color  */
