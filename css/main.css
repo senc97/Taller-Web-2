@@ -1,22 +1,17 @@
 /*  color: var(--main-color);  */
 :root{
-    --main-color: #0279CD;
-    --dark-color: #025C9B;
+    --main-color: #0279cd;
+    --dark-color: #025c9b;
     --darker-color: #012E4D;
     --black-color: #151720;
     --muted-color-dark: rgba(0,0,0,0.8);
     --muted-color-light: rgba(255,255,255,0.8);
 }
 
-/*  font-family: 'Barlow Condensed', sans-serif;  */
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
 /*  font-family: 'Lato', sans-serif;  */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 body{
     font-family: 'Lato', sans-serif!important;
-}
-.barlow{
-    font-family: 'Barlow Condensed', sans-serif!important;
 }
 
 /*  container  */
@@ -26,19 +21,19 @@ body{
 
 /*  background-color  */
 .bg-main{
-    background-color: var(--main-color);
+    background-color: var(--main-color)!important;
     color: white;
 }
 .bg-dark{
-    background-color: var(--dark-color);
+    background-color: var(--dark-color)!important;
     color: white;
 }
 .bg-darker{
-    background-color: var(--darker-color);
+    background-color: var(--darker-color)!important;
     color: white;
 }
 .bg-black{
-    background-color: var(--black-color);
+    background-color: var(--black-color)!important;
     color: white;
 }
 
@@ -112,6 +107,10 @@ body{
     width: 32px;
     height: 32px;
 }
+.icono-bg{
+    width: 48px;
+    height: 48px;
+}
 
 /*  logo  */
 .logo{
@@ -145,3 +144,8 @@ body{
     padding-right: 0.7rem;
 }
 
+/*  shadow  */
+
+.shadow{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)!important;
+}
