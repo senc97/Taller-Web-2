@@ -118,9 +118,21 @@
     <div class="row">
         <div class="col-4">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-implant-list" data-toggle="list" href="#list-implant" role="tab" aria-controls="implant">Implantología</a>
-            <a class="list-group-item list-group-item-action" id="list-og-list" data-toggle="list" href="#list-og" role="tab" aria-controls="og">Odontología General</a>
-            <a class="list-group-item list-group-item-action" id="list-rg-list" data-toggle="list" href="#list-rg" role="tab" aria-controls="rg">Regeneración Ósea</a>
+            <a class="list-group-item list-group-item-action active" id="list-implant-list" data-toggle="collapse" href="#collapse1" role="tab" aria-controls="implant">Implantología</a>
+            <div id="collapse1" class="panel-collapse collapse">
+                    <a class="list-group-item list-group-item-action" id="list-implant-list" data-toggle="list" href="#list-implant" role="tab" aria-controls="implant">Implante cónico</a>
+                    <a class="list-group-item list-group-item-action" id="list-implant-list" data-toggle="list" href="#list-implant" role="tab" aria-controls="implant">Implante cilíndrico</a>
+                  </div>
+            <a class="list-group-item list-group-item-action" id="list-og-list" data-toggle="collapse" href="#collapse2" role="tab" aria-controls="og">Odontología General</a>
+            <div id="collapse2" class="panel-collapse collapse">
+                    <a class="list-group-item list-group-item-action" id="list-og-list" data-toggle="list" href="#list-og" role="tab" aria-controls="og">Opcion 1</a>
+                    <a class="list-group-item list-group-item-action" id="list-og-list" data-toggle="list" href="#list-og" role="tab" aria-controls="og">Opcion 2</a>
+                  </div>
+            <a class="list-group-item list-group-item-action" id="list-rg-list" data-toggle="collapse" href="#collapse3" role="tab" aria-controls="rg">Regeneración Ósea</a>
+            <div id="collapse3" class="panel-collapse collapse">
+                    <a class="list-group-item list-group-item-action" id="list-rg-list" data-toggle="list" href="#list-rg" role="tab" aria-controls="rg">Opcion 1</a>
+                    <a class="list-group-item list-group-item-action" id="list-rg-list" data-toggle="list" href="#list-rg" role="tab" aria-controls="rg">Opcion 2</a>
+                  </div>
             <a class="list-group-item list-group-item-action" id="list-odont-list" data-toggle="list" href="#list-odont" role="tab" aria-controls="odont">Odontopediatría</a>
             <a class="list-group-item list-group-item-action" id="list-ortodoncia-list" data-toggle="list" href="#list-ortodoncia" role="tab" aria-controls="ortodoncia">Ortodoncia</a>
             <a class="list-group-item list-group-item-action" id="list-period-list" data-toggle="list" href="#list-period" role="tab" aria-controls="period">Periodoncia</a>
