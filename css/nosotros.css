@@ -3,9 +3,6 @@ iframe{
     height: 100%;
 }
 
-.btn-miniatura{
-}
-
 .btn-miniatura:hover{
     background-color: var(--dark-color);
     border-radius: 5px;
