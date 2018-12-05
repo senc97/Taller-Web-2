@@ -20,6 +20,9 @@ body{
 }
 
 /*  background-color  */
+.bg-normal{
+    background-color: white;
+}
 .bg-main{
     background-color: var(--main-color)!important;
     color: white;
