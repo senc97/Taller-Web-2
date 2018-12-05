@@ -1,0 +1,14 @@
+var contactFormHTML = "<div class='bg-main'><div class='container'><div class='row'><div class='col'><button type='button' onClick='closeContactForm()' class='btn btn-lg btn-opacity float-right p-2'> X </button></div></div></div></div><div class='bg-normal'> <div class='container mt-3 mb-3'> <div class='row'> <div class='col'> <p class='text-danger'><small><strong>*</strong> <em>Campos obligatorios</em></small></p> <form> <div class='form-row'> <div class='form-group col-md-3 pr-5'> <label for='ivalidationCustom01'>Nombres <strong class='text-danger'>*</strong></label> <input type='text' class='form-control' id='inputEmail4' placeholder='Nombres'> </div> <div class='form-group col-md-3 pr-5'> <label for='inputPassword4'>Apellidos <strong class='text-danger'>*</strong></label> <input type='text' class='form-control' id='inputPassword4' placeholder='Apellidos'> </div> <div class='form-group col-md-3 pr-5'> <label for='inputEmail4'>Correo electrónico <strong class='text-danger'>*</strong></label> <input type='email' class='form-control' id='inputEmail4' placeholder='usuario@email.com'> </div> <div class='form-group col-md-3'> <label for='inputPassword4'>Teléfono móvil</label> <input type='text' class='form-control' id='inputPassword4' placeholder='938 182 397'> </div> </div> <div class='form-row'> <div class='form-group col-md-3 pr-5'> <label for='inputAddress'>Servicio <strong class='text-danger'>*</strong></label> <div class='input-group mb-3'> <select class='custom-select' id='inputGroupSelect01'> <option selected>Selecciona un servicio...</option> <option value='1'>One</option> <option value='2'>Two</option> <option value='3'>Three</option> </select> </div> </div> <div class='form-group col-md-3 pr-5'> <label for='inputAddress'>Fecha de la cita <strong class='text-danger'>*</strong></label> <div class='input-group mb-3'> <select class='custom-select' id='inputGroupSelect01'> <option selected>Selecciona un servicio...</option> <option value='1'>One</option> <option value='2'>Two</option> <option value='3'>Three</option> </select> </div> </div> <div class='form-group d-flex align-items-end col-md-3 pr-5'> <p>Lorem ipsum.</p> </div> <div class='form-group d-flex align-items-end justify-content-end col-md-3'> <button type='submit' class='btn btn-primary'>Enviar</button> </div> </div> </form> </div> </div> </div> </div>";
+
+function contactForm(){
+    document.getElementById('contact-form')
+    .innerHTML = contactFormHTML;
+    
+    //<h1>Prueba de código</h1><button type='button' id='close-contact-form' onClick='closeContactForm()' class='btn btn-secondary'>Cerrar</button>'
+
+}
+
+//<button type='button' id='close-contact-form' onClick='closeContactForm()' class='btn btn-secondary'>Cerrar</button>
+function closeContactForm(){
+    document.getElementById('contact-form').innerHTML = '';
+}
