@@ -1,0 +1,45 @@
+/*  font-family: 'Barlow Condensed', sans-serif;  */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+/*  font-family: 'Lato', sans-serif;  */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body{
+    font-family: 'Lato', sans-serif!important;
+}
+
+.btn-primary{
+    float: right;
+    margin-right: 155px;
+}
+
+#exampleFormControlTextarea1{
+    height: 200px;
+}
+
+.cls{
+    width: 335px;
+}
+
+.form-group{
+    width: 836px;
+}
+
+
+.vl {
+    border-left: 3px solid rgb(190, 190, 190);
+    height: 750px;
+    position: relative  ;
+    left: -5%;
+    margin-left: -3px;
+    top: 10%;
+}
+
+.mb-4{
+    font-size: 15px;
+    padding-left: 50px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+}
