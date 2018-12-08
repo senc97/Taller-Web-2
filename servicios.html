@@ -35,7 +35,7 @@
     <!-- /// JS Personalizado /// -->
     <script src="js/main.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/cont.css" type="text/css" />
-
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <style>
       /*  font-family: 'Barlow Condensed', sans-serif;  */
       @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
@@ -111,6 +111,7 @@
               <button type="button" class="btn btn-primary">Contacto</button>
             </a>
             <!-- // Cambio de idioma // -->
+            <div id="google_translate_element"></div>
             <div class="dropdown ml-3">
               <button
                 class="btn dropdown-toggle"
@@ -122,10 +123,11 @@
               >
                 ES
               </button>
+              
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item active" href="#">Español</a>
-                <a class="dropdown-item" href="#">English</a>
-                <a class="dropdown-item" href="#">Gallego</a>
+                <a class="dropdown-item active" href="servicios.html">Español</a>
+                <a class="dropdown-item" href="servicios_en.html">English</a>
+                <a class="dropdown-item" href="servicios_ga.html">Gallego</a>
               </div>
             </div>
           </div>
@@ -168,14 +170,14 @@
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a
                   class="dropdown-item active"
-                  href="#"
+                  href="servicios.html"
                   title="Idioma : Español"
                   >Español</a
                 >
-                <a class="dropdown-item" href="#" title="Language : English"
+                <a class="dropdown-item" href="servicios_en.html" title="Language : English"
                   >English</a
                 >
-                <a class="dropdown-item" href="#" title="Linguaxe : Galego"
+                <a class="dropdown-item" href="sevicios_ga.html" title="Linguaxe : Galego"
                   >Galego</a
                 >
               </div>
@@ -188,140 +190,139 @@
     <div class="container">
     <div class="row">
       <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-          <a
-            class="list-group-item list-group-item-action active"
-            id="list-implant-list"
-            data-toggle="collapse"
-            href="#collapse1"
-            role="tab"
-            aria-controls="implant"
-            >Implantología</a
-          >
-          <div id="collapse1" class="panel-collapse collapse">
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-implant-list"
-              data-toggle="list"
-              href="#list-implant"
-              role="tab"
-              aria-controls="implant"
-              >Implante cónico</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-implant-list"
-              data-toggle="list"
-              href="#list-implant"
-              role="tab"
-              aria-controls="implant"
-              >Implante cilíndrico</a
-            >
-          </div>
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-og-list"
-            data-toggle="list"
-            href="#list-og"
-            role="tab"
-            aria-controls="og"
-            >Odontología General</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-rg-list"
-            data-toggle="list"
-            href="#list-rg"
-            role="tab"
-            aria-controls="rg"
-            >Regeneración Ósea</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-odont-list"
-            data-toggle="list"
-            href="#list-odont"
-            role="tab"
-            aria-controls="odont"
-            >Odontopediatría</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-ortodoncia-list"
-            data-toggle="collapse"
-            href="#collapse2"
-            role="tab"
-            aria-controls="ortodoncia"
-            >Ortodoncia</a
-          >
-          <div id="collapse2" class="panel-collapse collapse">
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-ortodoncia-list"
-              data-toggle="list"
-              href="#list-ortodoncia"
-              role="tab"
-              aria-controls="ortodoncia"
-              >Ortodoncia infantil</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-ortodoncia-list"
-              data-toggle="list"
-              href="#list-ortodoncia"
-              role="tab"
-              aria-controls="ortodoncia"
-              >Ortodoncia en adultos</a
-            >
-          </div>
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-period-list"
-            data-toggle="list"
-            href="#list-period"
-            role="tab"
-            aria-controls="period"
-            >Periodoncia</a
-          >
-          <a
-            class="list-group-item list-group-item-action"
-            id="list-ciru-list"
-            data-toggle="collapse"
-            href="#collapse3"
-            role="tab"
-            aria-controls="ciru"
-            >Cirugía</a
-          >
-          <div id="collapse3" class="panel-collapse collapse">
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-ciru-list"
-              data-toggle="list"
-              href="#list-ciru"
-              role="tab"
-              aria-controls="ciru"
-              >Cirugía mínimamente invasiva</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-ciru-list"
-              data-toggle="list"
-              href="#list-ciru"
-              role="tab"
-              aria-controls="ciru"
-              >Cirugía de implantes</a
-            >
-            <a
-              class="list-group-item list-group-item-action"
-              id="list-ciru-list"
-              data-toggle="list"
-              href="#list-ciru"
-              role="tab"
-              aria-controls="ciru"
-              >Cirugía periodontal</a
-            >
-          </div>
-        </div>
+        <style>
+.sidebar-nav {
+
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    position: relative; 
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-nav li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: transparent;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+.sidebar-nav li:first-child a {
+    color: #000;
+    background-color: transparent;
+}
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;    
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+    color: #000;
+    text-decoration: none;
+    background-color: #eee;
+    border-left: 5px solid #0279cd
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:active,
+.sidebar-nav li.open a:focus{
+  font-weight: 600
+          }
+          
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 20px;
+    line-height: 44px;
+}
+.sidebar-nav .dropdown-menu {
+    top:0;
+    position: relative;
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    color: #aaa;
+    box-shadow: none;
+    
+}
+          .sidebar-nav .dropdown-menu li a{
+            padding-left: 55px;
+            color:#555;
+            font-size: 80%
+          }
+</style>
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation" style="margin-top: 30px">
+            <ul class="nav sidebar-nav">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data="list-implant">Implantología <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" >Implante cónico</a></li>
+                    <li><a href="#" >Implante cilíndrico</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#" data="list-og">Odontología General</a>
+                </li>
+                <li>
+                    <a href="#"  data="list-rg">Regeneración Ósea</a>
+                </li>
+                <li>
+                    <a href="#"  data="list-odont">Odontopediatría</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data="list-ortodoncia">Ortodoncia <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Ortodoncia infantil</a></li>
+                    <li><a href="#">Ortodoncia en adultos</a></li>
+                  </ul>
+                </li>
+                <li>
+                    <a href="#" data="list-period">Periodoncia</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"  data="list-ciru" >Cirugía <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Cirugía mínimamente invasiva</a></li>
+                    <li><a href="#">Cirugía de implantes</a></li>
+                    <li><a href="#">Cirugía periodontal</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
       </div>
       <div class="col-8">
         <div class="tab-content" id="nav-tabContent">
@@ -559,17 +560,85 @@
         </div>
 
         <div class="col-sm-6">
+                <style>
+        #bpc.btn.btn-primary{
+          color:#0279cd;
+          background-color: #fff;
+          border: 2px solid #fff;
+        }
+        #bpc.btn.btn-primary.collapsed{
+          color:white;
+          background-color: #0279cd;
+          border: 2px solid #fff;
+        }
+      </style>
           <button
+            id="bpc"
             type="button"
             class="btn btn-primary"
             style="position:absolute; right:100px; top:45px"
+            data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
           >
             Pide una cita
           </button>
         </div>
       </div>
+
+      
     </div>
 
+<div class="collapse row" id="collapseExample">
+  <div style="width: 30px;height:30px;background-color: #006DB4;margin-left: 1380px;position: absolute;margin-top: -15px;transform: rotate(45deg);"></div>
+  <div style="width: 100%;height:30px;background-color: #006DB4"></div>
+  <form class="col-sm-10" style="margin: 30px auto">
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputEmail4">Nombres</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Nombres">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputPassword4">Apellidos</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Apellidos">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputEmail4">Correo Electronico</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputEmail4">Telefono/Movil</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Teléfono">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+    <label for="exampleSelect1">Servicio</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Implantología</option>
+      <option>Odontologia General</option>
+      <option>Regeneración Ósea</option>
+      <option>Odontopediatría</option>
+      <option>Ortodoncia</option>
+      <option>Periodoncia</option>
+      <option>Cirugía</option>
+    </select>
+  </div>
+  <div class="form-group col-md-3">
+    <label for="example-date-input" class="col-2 col-form-label">Fecha</label>
+    <div class="col-10">
+      <input class="form-control" type="date" value="2018-12-10" id="example-date-input">
+    </div>
+  </div>
+    <div class="col-md-5" style="margin-top: 30px">
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  -->
+  Haz click en enviar para programar tu cita
+    </div>
+    <div class="col-md-1"  style="margin-top: 30px">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+ </div>
+
+</form>
+</div>
     <!-- /// Footer /// -->
     <footer class="bg-black p-5">
       <div class="container">
@@ -654,5 +723,15 @@
         </div>
       </div>
     </footer>
+    <script>
+$( "a[data]" ).click(function() {
+   var id = $(this).attr('data');
+   $("div[role]").removeClass("active");
+   $("div[role]").removeClass("show");
+   $("#"+id).addClass("active");
+   $("#"+id).addClass("show");
+
+});
+    </script>
   </body>
 </html>
