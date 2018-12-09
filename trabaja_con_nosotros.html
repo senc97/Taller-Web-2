@@ -27,7 +27,7 @@
 <body>
 
     <div class="cancel">
-        <a href="javascript:history.back()"> <img src="http://www6.rdconsultores.pe/imagenes/iconos/close-cross.svg" alt="back"></a>
+        <a href="javascript:history.back()"> <img src="http://www6.rdconsultores.pe/imagenes/iconos/close-cross.svg" alt=""></a>
     </div>
     
     <div class="container">
@@ -39,22 +39,46 @@
 
                 <div class="resto">
                 <h2>Trabaja con nosotros</h2>
-                <br>
+
                 <h4>Adjunta tu CV</h4>
-                <br>
+
                 <div class="input-group mb-3">
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" id="inputGroupFile02">
                           <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Suba el archivo</label>
                         </div>
                 <div class="input-group-append">
-                    <button class="input-group-text" id="inputGroupFileAddon02">Enviar</button>
+                    <button class="input-group-text btn btn-primary" id="inputGroupFileAddon02" data-toggle="modal" data-target=".bd-example-modal-lg">Enviar</button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="close">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                               
+                                <div>
+                                    <img src="http://www6.rdconsultores.pe/imagenes/iconos/tick.svg" alt="check">
+                                </div>
+                                 <div>
+                                    <strong>Se subió con éxito</strong>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <a href="http://www6.rdconsultores.pe/" class="btn btn-primary btn-lg active cb" role="button" aria-pressed="true">Regresar al Inicio</a>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 </div>                        
                 
 
                 <br>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Neque porro quisquam est.</p>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moduptatem.Neque porro quisquam est.</p>
                 </div>
             </div>
         </div>
