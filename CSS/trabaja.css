@@ -19,7 +19,7 @@ body{
 }
 
 .cancel img{
-    width: 40px;
+    width: 30px;
 }
 
 .log{
@@ -55,6 +55,28 @@ p{
 .container{
     width: 45%;
 }
+.modal-body{
+    color: #0279CD;
+
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.modal-body strong{
+    font-size: 50px;
+}
+
+.modal-body img{
+    width: 70px;
+}
+
+
+.close{
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
 
 footer{
     color: white;
@@ -62,6 +84,14 @@ footer{
     position: absolute;
     justify-content: center;
     width: 100%;
+}
+
+.resto h2{
+    margin-bottom: 45px;
+}
+
+.resto h4{
+    margin-bottom: 20px;
 }
 
 footer p{
